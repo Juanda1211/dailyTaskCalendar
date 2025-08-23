@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Daily Task Calendar</title>
+</head>
+<body>
+  <input type="datetime-local" id="datetimepicker" name="datetime" required>
+  <div class="container"><h2>My Daily Tasks</h2>
+  <form id="taskForm">
+  <label for="name" >Task Name:</label><br>
+  <input type="text" name="nametask" id="name" placeholder="task..." required>
+  <label for="taskpriority">Priority:</label>
+  <select id="taskpriority" name="priority">
+  <option >low</option>
+  <option >medium</option>
+  <option >high</option>
+</select><br>
+  <button type="submit" >add task</button><br><br>
+  </form>
+ <div class="task-list">
+      <h3>Task List</h3>
+      <div id="taskContainer">
+  <!--task list will be added in this section-->
+      </div>
+    </div>
+</div>
+</body>
+</html>

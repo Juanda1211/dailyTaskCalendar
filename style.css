@@ -1,0 +1,100 @@
+body{
+    background-color: wheat;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    text-align: flex-start;
+    flex-direction: column;
+    border: 2px red solid;
+    border-radius: 10px;
+    margin: 10%;
+    background-color: aqua;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.task-list{
+    border: 2px solid rgb(180, 82, 82);
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.task-list h3{
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px 10px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: rgba(207, 193, 193, 0.7);
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.priority-badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 70%;
+   
+}
+
+.delete-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #ff4444;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.delete-btn:hover {
+    color: #ff0000;
+}
+
+.task-item input[type="checkbox"]:checked + label {
+    text-decoration: solid;
+    color: #888;
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+#datetimepicker{
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 5px;   
+}
+h2,h3{
+    display: flex;
+    align-items: flex-start;
+    text-align: flex-start;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
